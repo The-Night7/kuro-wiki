@@ -12,21 +12,21 @@ export default function HomePage() {
           Kuro by firael
         </h1>
         <p className="mt-4 max-w-md text-muted">
-          Everything you need to install, configure, and troubleshoot the mod —
+          Everything you need to use, configure, and troubleshoot the mod —
           written to be read fast and followed without getting lost.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <Link
-            href="/installation"
+            href="/guide"
             className="border border-gold px-4 py-2 text-sm text-goldbright transition-colors hover:bg-gold/10"
           >
-            Start the installation
+            User Guide
           </Link>
           <Link
-            href="/guide"
+            href="/faq"
             className="border border-line px-4 py-2 text-sm text-parchment/80 transition-colors hover:border-teal hover:text-teal"
           >
-            User Guide
+            FAQ & Troubleshooting
           </Link>
         </div>
       </div>
