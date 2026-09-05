@@ -70,6 +70,16 @@ export const wiki: NavSection[] = [
             src: "/videos/activate-shizuku-zarchiver.mp4",
             caption: "How to activate Shizuku and ZArchiver to edit your files.",
           },
+          {
+            type: "note",
+            tone: "tip",
+            text: "Don't want to use Shizuku? You can use a file renaming app instead — just open it and use it to rename the game's file if you already have one installed.",
+          },
+          {
+            type: "image",
+            src: "/images/rename-game-file-without-shizuku.jpg",
+            alt: "Apps you can use to rename the game's file without needing Shizuku.",
+          },
           { type: "h2", text: "Installation steps" },
           {
             type: "ol",
@@ -341,10 +351,20 @@ export const wiki: NavSection[] = [
             type: "p",
             text: "Turn off all mods and enter the game normally when you first launch it.",
           },
+          {
+            type: "video",
+            src: "/videos/combo-turn-off-mods-on-launch.mp4",
+            caption: "Turn off all mods and enter the game normally.",
+          },
           { type: "h3", text: "2. Only enable what you need" },
           {
             type: "p",
             text: "When using a specific mod, only turn it on when you actually need it. Watch the videos in the User Guide to learn how.",
+          },
+          {
+            type: "video",
+            src: "/videos/combo-only-enable-when-needed.mp4",
+            caption: "Only use a mod when you need it.",
           },
           { type: "h2", text: "Combo: General / QoL" },
           {
@@ -361,6 +381,11 @@ export const wiki: NavSection[] = [
             tone: "tip",
             text: "This combo is what's used for farming — completely safe for collecting chests and other items for hours. Just don't push it too much.",
           },
+          {
+            type: "video",
+            src: "/videos/combo-farming-settings.mp4",
+            caption: "The settings used for farming chests and items safely.",
+          },
           { type: "h2", text: "Combo: Combat" },
           {
             type: "kv",
@@ -373,6 +398,11 @@ export const wiki: NavSection[] = [
               ],
             ],
           },
+          {
+            type: "video",
+            src: "/videos/combo-combat-player-speed-multihit.mp4",
+            caption: "Player Speed and Multi Hit combo for combat.",
+          },
           { type: "h2", text: "Combo: Exploration" },
           {
             type: "kv",
@@ -380,6 +410,11 @@ export const wiki: NavSection[] = [
               ["Feature", "Risk"],
               ["NoClip", "High risk"],
             ],
+          },
+          {
+            type: "video",
+            src: "/videos/combo-exploration-noclip.mp4",
+            caption: "NoClip combo for exploration.",
           },
         ],
       },
