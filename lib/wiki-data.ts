@@ -324,6 +324,67 @@ export const wiki: NavSection[] = [
       },
     ],
   },
+  {
+    label: "Combinations",
+    pages: [
+      {
+        slug: "combinations",
+        title: "Combinations",
+        tagline: "Safe mod loadouts other players use, and the risk of each.",
+        blocks: [
+          {
+            type: "p",
+            text: "A few tips from the community to avoid getting banned in-game — used regularly with no bans so far.",
+          },
+          { type: "h3", text: "1. Turn off all mods on launch" },
+          {
+            type: "p",
+            text: "Turn off all mods and enter the game normally when you first launch it.",
+          },
+          { type: "h3", text: "2. Only enable what you need" },
+          {
+            type: "p",
+            text: "When using a specific mod, only turn it on when you actually need it. Watch the videos in the User Guide to learn how.",
+          },
+          { type: "h2", text: "Combo: General / QoL" },
+          {
+            type: "kv",
+            rows: [
+              ["Feature", "Risk"],
+              ["No Fall Damage", "Risky"],
+              ["Auto Talk", "Safe to use all the time"],
+              ["Skip Video", "Safe to use all the time"],
+            ],
+          },
+          {
+            type: "note",
+            tone: "tip",
+            text: "This combo is what's used for farming — completely safe for collecting chests and other items for hours. Just don't push it too much.",
+          },
+          { type: "h2", text: "Combo: Combat" },
+          {
+            type: "kv",
+            rows: [
+              ["Feature", "Risk"],
+              ["Player Speed", "High risk"],
+              [
+                "Multi Hit",
+                "Risky — turn it on right before a fight, off when you're done",
+              ],
+            ],
+          },
+          { type: "h2", text: "Combo: Exploration" },
+          {
+            type: "kv",
+            rows: [
+              ["Feature", "Risk"],
+              ["NoClip", "High risk"],
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export function findPage(slug: string): WikiPage | undefined {
