@@ -57,12 +57,24 @@ export default function Sidebar() {
         ))}
       </nav>
 
-      <div className="border-t border-line/60 px-6 py-4">
+      <div className="space-y-1.5 border-t border-line/60 px-6 py-4">
         <a
-          href="https://github.com/"
-          className="text-xs text-muted hover:text-teal"
+          href="https://4firas.github.io/Kuro-GI/"
+          className="block text-xs text-muted hover:text-teal"
         >
-          Source code on GitHub →
+          Website →
+        </a>
+        <a
+          href="https://github.com/4firas/Kuro-GI/releases"
+          className="block text-xs text-muted hover:text-teal"
+        >
+          GitHub →
+        </a>
+        <a
+          href="https://discord.gg/PUMxTMdjSq"
+          className="block text-xs text-muted hover:text-teal"
+        >
+          Discord →
         </a>
       </div>
     </aside>
