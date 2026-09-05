@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #141b2e;
+  color: #edeae0;
+}
+
+body {
+  font-family: var(--font-body), sans-serif;
+  background-image:
+    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(79, 189, 186, 0.08), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 100% 0%, rgba(201, 169, 97, 0.07), transparent 55%);
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display), serif;
+  letter-spacing: 0.01em;
+}
+
+/* Genshin-style corner-bracket frame: used once, deliberately, on the hero
+   and on the active-page marker. Not a border-radius card system. */
+.bracket-frame {
+  position: relative;
+  padding: 2.25rem;
+}
+.bracket-frame::before,
+.bracket-frame::after,
+.bracket-frame > .bf-tr,
+.bracket-frame > .bf-bl {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-color: #c9a961;
+  border-style: solid;
+  border-width: 0;
+}
+.bracket-frame::before {
+  top: 0;
+  left: 0;
+  border-top-width: 2px;
+  border-left-width: 2px;
+}
+.bracket-frame::after {
+  bottom: 0;
+  right: 0;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+}
+.bracket-frame > .bf-tr {
+  top: 0;
+  right: 0;
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+.bracket-frame > .bf-bl {
+  bottom: 0;
+  left: 0;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+
+.prose-wiki :where(p, ul, ol) {
+  color: #cfd3e4;
+  line-height: 1.75;
+}
+.prose-wiki h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.9rem;
+  color: #edeae0;
+}
+.prose-wiki h3 {
+  font-size: 1.15rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+  color: #edeae0;
+}
+.prose-wiki code {
+  background: #212c4c;
+  border: 1px solid #31406b;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+  color: #e4c883;
+}
+.prose-wiki pre {
+  background: #1b2540;
+  border: 1px solid #31406b;
+  border-left: 2px solid #4fbdba;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  margin: 1.1rem 0;
+}
+.prose-wiki pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #edeae0;
+}
+.prose-wiki a {
+  color: #4fbdba;
+  text-underline-offset: 3px;
+}
+.prose-wiki a:hover {
+  color: #7fd6d3;
+}
+.prose-wiki blockquote {
+  border-left: 2px solid #c9a961;
+  padding-left: 1rem;
+  color: #93a0c2;
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-once {
+    animation: reveal-once 0.6s ease-out both;
+  }
+}
+@keyframes reveal-once {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
