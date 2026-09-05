@@ -50,6 +50,26 @@ export const wiki: NavSection[] = [
               "Download the Kuro APK from the GitHub repository",
             ],
           },
+          { type: "h3", text: "Unlock Developer Options" },
+          {
+            type: "p",
+            text: "Some steps below need Developer Options enabled. Go to Settings > About phone and tap the Build number 5 times to unlock it.",
+          },
+          {
+            type: "video",
+            src: "/videos/unlock-developer-options.mp4",
+            caption: "How to unlock Developer Options.",
+          },
+          { type: "h3", text: "Activate Shizuku and ZArchiver" },
+          {
+            type: "p",
+            text: "Shizuku gives ZArchiver the file access it needs to install and edit APK files.",
+          },
+          {
+            type: "video",
+            src: "/videos/activate-shizuku-zarchiver.mp4",
+            caption: "How to activate Shizuku and ZArchiver to edit your files.",
+          },
           { type: "h2", text: "Installation steps" },
           {
             type: "ol",
@@ -61,12 +81,32 @@ export const wiki: NavSection[] = [
             ],
           },
           {
+            type: "image",
+            src: "/images/download-kuro-github-1.jpg",
+            alt: "Finding the Kuro APK in the GitHub repository's Assets.",
+          },
+          {
+            type: "image",
+            src: "/images/download-kuro-github-2.jpg",
+            alt: "Selecting the Kuro APK file to download.",
+          },
+          {
             type: "ul",
             items: [
               "The app shows no errors on startup",
               "The mod's logo is visible in-game and opens the mod's menu",
               "The displayed version matches the downloaded file",
             ],
+          },
+          { type: "h2", text: "Updating to a new version" },
+          {
+            type: "p",
+            text: "Updating works the same way as a fresh install — download the new APK and install it over the existing one.",
+          },
+          {
+            type: "video",
+            src: "/videos/install-update.mp4",
+            caption: "How to install a new Kuro update.",
           },
         ],
       },
@@ -169,6 +209,11 @@ export const wiki: NavSection[] = [
           {
             type: "p",
             text: "Anything marked (Local) only affects your own client and is safe to use. Anything marked (Server~checkable) is sent to the server — it's almost safe, but should still be used sparingly.",
+          },
+          {
+            type: "image",
+            src: "/images/sent-to-server.jpg",
+            alt: "What the (Server~checkable) marker looks like in the mod menu.",
           },
           { type: "h3", text: "Will I get hacked?" },
           {
