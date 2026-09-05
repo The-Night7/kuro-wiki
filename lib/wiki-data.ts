@@ -175,20 +175,25 @@ export const wiki: NavSection[] = [
         title: "FAQ & Troubleshooting",
         tagline: "Common problems and how to solve them.",
         blocks: [
-          { type: "h3", text: "The mod doesn't load" },
+          { type: "h3", text: "The APK won't install" },
           {
             type: "p",
-            text: "Make sure the loader is running before the game, and that the mod version matches your installed game version.",
+            text: "Make sure \"Install unknown apps\" is allowed for the app you used to open the APK, and that you downloaded the file completely (a partial download will fail to install). Re-download it if in doubt.",
+          },
+          { type: "h3", text: "The mod's menu doesn't show up in-game" },
+          {
+            type: "p",
+            text: "Confirm you installed the Kuro APK itself and not the official Genshin Impact APK, and that the installed version matches the one you downloaded.",
           },
           { type: "h3", text: "The game crashes on startup" },
           {
             type: "p",
-            text: "Disable other mods one at a time to identify a conflict, then check the GitHub Issues for a similar report.",
+            text: "Try reinstalling the APK, then check the pinned messages on the Discord server for a similar report before asking.",
           },
           { type: "h3", text: "Where do I report a bug?" },
           {
             type: "p",
-            text: "Open an Issue on the project's GitHub repository with your setup, loader logs, and steps to reproduce.",
+            text: "Report it in the bug-report channel on the Discord server, along with your device, your Genshin Impact version, and steps to reproduce.",
           },
         ],
       },
