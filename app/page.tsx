@@ -9,7 +9,7 @@ export default function HomePage() {
         <span className="bf-bl" />
         <p className="mb-3 text-sm text-teal">Wiki communautaire · non-officiel</p>
         <h1 className="font-display text-4xl leading-tight text-parchment md:text-5xl">
-          [Nom du mod]
+          Kuro by firael
         </h1>
         <p className="mt-4 max-w-md text-muted">
           Tout ce qu'il faut pour installer, configurer et dépanner le mod —

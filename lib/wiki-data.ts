@@ -20,7 +20,7 @@ export type NavSection = {
   pages: WikiPage[];
 };
 
-export const modName = "[Nom du mod]";
+export const modName = "Kuro by firael";
 
 export const wiki: NavSection[] = [
   {

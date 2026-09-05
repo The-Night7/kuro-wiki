@@ -13,7 +13,7 @@ export default function Sidebar() {
       <div className="px-6 pb-4 pt-8">
         <Link href="/" className="block">
           <p className="font-display text-lg text-parchment">
-            [Nom du mod]
+            Kuro by firael
           </p>
           <p className="text-xs text-muted">Wiki communautaire</p>
         </Link>
