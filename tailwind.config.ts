@@ -9,16 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        night: "#141B2E",
-        panel: "#1B2540",
-        panel2: "#212C4C",
-        line: "#31406B",
-        parchment: "#EDEAE0",
-        muted: "#93A0C2",
-        gold: "#C9A961",
-        goldbright: "#E4C883",
-        teal: "#4FBDBA",
-        ember: "#D8724B",
+        night: "#141A18",
+        panel: "#1C2524",
+        panel2: "#0C100F",
+        line: "#DBC599",
+        parchment: "#DBC599",
+        muted: "#96886C",
+        gold: "#DBC599",
+        goldbright: "#FFFFFF",
+        teal: "#557283",
+        ember: "#C35952",
       },
       fontFamily: {
         display: ["var(--font-display)", "serif"],

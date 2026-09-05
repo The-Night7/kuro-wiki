@@ -2,21 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "HYWenHei";
+  src: url("/fonts/hywh.woff") format("woff");
+  font-weight: 400 900;
+  font-display: swap;
+}
+
 :root {
   color-scheme: dark;
+  --font-display: "HYWenHei", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans SC", "PingFang SC", sans-serif;
+  --font-body: "HYWenHei", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans SC", "PingFang SC", sans-serif;
 }
 
 html,
 body {
-  background-color: #141b2e;
-  color: #edeae0;
+  background-color: #141a18;
+  color: #b9ac8f;
 }
 
 body {
   font-family: var(--font-body), sans-serif;
   background-image:
-    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(79, 189, 186, 0.08), transparent 60%),
-    radial-gradient(ellipse 700px 500px at 100% 0%, rgba(201, 169, 97, 0.07), transparent 55%);
+    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(85, 114, 131, 0.08), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 100% 0%, rgba(219, 197, 153, 0.07), transparent 55%);
   background-attachment: fixed;
 }
 
@@ -42,7 +53,7 @@ h4 {
   position: absolute;
   width: 22px;
   height: 22px;
-  border-color: #c9a961;
+  border-color: #dbc599;
   border-style: solid;
   border-width: 0;
 }
@@ -72,33 +83,33 @@ h4 {
 }
 
 .prose-wiki :where(p, ul, ol) {
-  color: #cfd3e4;
+  color: #b9ac8f;
   line-height: 1.75;
 }
 .prose-wiki h2 {
   font-size: 1.5rem;
   margin-top: 2.5rem;
   margin-bottom: 0.9rem;
-  color: #edeae0;
+  color: #dbc599;
 }
 .prose-wiki h3 {
   font-size: 1.15rem;
   margin-top: 1.75rem;
   margin-bottom: 0.6rem;
-  color: #edeae0;
+  color: #dbc599;
 }
 .prose-wiki code {
-  background: #212c4c;
-  border: 1px solid #31406b;
+  background: #0c100f;
+  border: 1px solid rgba(219, 197, 153, 0.22);
   padding: 0.1rem 0.4rem;
   border-radius: 3px;
   font-size: 0.85em;
-  color: #e4c883;
+  color: #adffa3;
 }
 .prose-wiki pre {
-  background: #1b2540;
-  border: 1px solid #31406b;
-  border-left: 2px solid #4fbdba;
+  background: #0c100f;
+  border: 1px solid rgba(219, 197, 153, 0.22);
+  border-left: 2px solid #557283;
   padding: 1rem 1.1rem;
   overflow-x: auto;
   margin: 1.1rem 0;
@@ -107,19 +118,19 @@ h4 {
   background: none;
   border: none;
   padding: 0;
-  color: #edeae0;
+  color: #dbc599;
 }
 .prose-wiki a {
-  color: #4fbdba;
+  color: #557283;
   text-underline-offset: 3px;
 }
 .prose-wiki a:hover {
-  color: #7fd6d3;
+  color: #ffffff;
 }
 .prose-wiki blockquote {
-  border-left: 2px solid #c9a961;
+  border-left: 2px solid #dbc599;
   padding-left: 1rem;
-  color: #93a0c2;
+  color: #96886c;
   font-style: italic;
 }
 
