@@ -44,10 +44,8 @@ export const wiki: NavSection[] = [
           {
             type: "ul",
             items: [
-              "Genshin Impact installé et à jour",
-              "Outil de modding requis (ex. injecteur/loader) — précise lequel ici",
-              "Espace disque disponible (~XXX Mo)",
-              "Windows 10/11 64 bits (ou précise ta cible)",
+              "Genshin Impact installé ou pas (pas besoin de le lancer pour installer le mod ni de le désinstaller)",
+              "Télécharger l'apk Kuro depuis le dépôt GitHub",
             ],
           },
           { type: "h2", text: "Étapes d'installation" },
@@ -55,34 +53,18 @@ export const wiki: NavSection[] = [
             type: "ol",
             items: [
               "Télécharge la dernière version depuis la page Releases du dépôt GitHub.",
-              "Extrais l'archive dans un dossier dédié, hors du dossier d'installation du jeu.",
-              "Copie les fichiers du mod dans le dossier attendu par ton loader.",
-              "Lance le loader/injecteur avant de démarrer Genshin Impact.",
-              "Lance le jeu et vérifie que le mod est actif (voir la section Vérification).",
+              "Ouvre l'application ZArchives et aller dans le répertoir contenant l'apk téléchargé.",
+              "Appuyer dessus et choisir l'option Installer.",
+              "Lance le jeu et vérifie que le mod est actif et fonctionnel.",
             ],
-          },
-          {
-            type: "code",
-            lang: "bash",
-            code: `# Exemple : structure attendue après extraction\nmods/\n  └─ ${modName}/\n      ├─ mod.json\n      └─ assets/`,
-          },
-          { type: "h2", text: "Vérification" },
-          {
-            type: "p",
-            text: "Une fois en jeu, confirme que le mod est bien chargé avant de continuer vers le guide d'utilisation.",
           },
           {
             type: "ul",
             items: [
-              "La console du loader ne montre aucune erreur au démarrage",
-              "L'élément modifié par le mod est visible en jeu",
+              "L'application ne montre aucune erreur au démarrage",
+              "Le logo du mod est visible en jeu et ouvre le menu du mod",
               "La version affichée correspond au fichier téléchargé",
             ],
-          },
-          {
-            type: "note",
-            tone: "warn",
-            text: "Les mods non officiels peuvent enfreindre les conditions d'utilisation de Genshin Impact. Installe-les à tes propres risques et informe-toi sur les règles en vigueur.",
           },
         ],
       },
@@ -93,15 +75,12 @@ export const wiki: NavSection[] = [
         blocks: [
           {
             type: "p",
-            text: "Si tu veux revenir en arrière, retire le mod dans l'ordre suivant pour éviter les fichiers orphelins.",
+            text: "Si tu veux revenir en arrière.",
           },
           {
             type: "ol",
             items: [
-              "Ferme Genshin Impact et le loader/injecteur.",
-              `Supprime le dossier ${modName} de ton répertoire de mods.`,
-              "Supprime les entrées de configuration associées si ton loader en garde.",
-              "Redémarre le loader pour confirmer que le mod n'apparaît plus dans la liste.",
+              "Désinstalle Kuro (pas besoin de toucher à la version officielle).",
             ],
           },
         ],
