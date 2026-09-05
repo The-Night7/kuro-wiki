@@ -58,6 +58,35 @@ export default function PageBody({ blocks }: { blocks: Block[] }) {
             );
           case "note":
             return <Note key={i} tone={block.tone} text={block.text} />;
+          case "image":
+            return (
+              <figure key={i} className="my-5">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={block.src}
+                  alt={block.alt}
+                  className="w-full border border-line"
+                />
+                <figcaption className="mt-1.5 text-xs text-muted">
+                  {block.alt}
+                </figcaption>
+              </figure>
+            );
+          case "video":
+            return (
+              <figure key={i} className="my-5">
+                <video
+                  src={block.src}
+                  controls
+                  className="w-full border border-line"
+                />
+                {block.caption && (
+                  <figcaption className="mt-1.5 text-xs text-muted">
+                    {block.caption}
+                  </figcaption>
+                )}
+              </figure>
+            );
           case "kv":
             return (
               <table key={i} className="my-4 w-full border-collapse text-sm">

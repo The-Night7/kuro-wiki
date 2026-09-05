@@ -6,7 +6,9 @@ export type Block =
   | { type: "ol"; items: string[] }
   | { type: "code"; lang?: string; code: string }
   | { type: "note"; tone: "info" | "warn" | "tip"; text: string }
-  | { type: "kv"; rows: [string, string][] };
+  | { type: "kv"; rows: [string, string][] }
+  | { type: "image"; src: string; alt: string }
+  | { type: "video"; src: string; caption?: string };
 
 export type WikiPage = {
   slug: string;
@@ -118,6 +120,11 @@ export const wiki: NavSection[] = [
             text: "No. There's no need to delete your original Genshin Impact, as you can run both of them.",
           },
           {
+            type: "video",
+            src: "/videos/play-apk-without-reinstalling.mp4",
+            caption: "How to play the Kuro APK without reinstalling the game.",
+          },
+          {
             type: "h3",
             text: "Can I use this mod in endgame content (Spiral Abyss, Stygian Onslaught, Imaginarium Theater)?",
           },
@@ -158,6 +165,11 @@ export const wiki: NavSection[] = [
             type: "p",
             text: "It goes through dialogue faster without you tapping the screen, and it automatically picks the first option. Check the pinned messages for how to enable it.",
           },
+          {
+            type: "video",
+            src: "/videos/auto-skip-dialogue.mp4",
+            caption: "How to enable Auto Skip Dialogue.",
+          },
           { type: "h2", text: "Still stuck?" },
           {
             type: "p",
@@ -184,6 +196,11 @@ export const wiki: NavSection[] = [
           {
             type: "p",
             text: "Confirm you installed the Kuro APK itself and not the official Genshin Impact APK, and that the installed version matches the one you downloaded.",
+          },
+          {
+            type: "image",
+            src: "/images/original-vs-modified-icon.jpg",
+            alt: "Visual difference between the original app and the modified one. To revert to the original, do the same but change the letter (t) back to (n).",
           },
           { type: "h3", text: "The game crashes on startup" },
           {
