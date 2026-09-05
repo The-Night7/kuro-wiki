@@ -24,63 +24,63 @@ export const modName = "Kuro by firael";
 
 export const wiki: NavSection[] = [
   {
-    label: "Démarrage",
+    label: "Getting Started",
     pages: [
       {
         slug: "installation",
         title: "Installation",
-        tagline: "Mettre le mod en place, étape par étape.",
+        tagline: "Set up the mod, step by step.",
         blocks: [
           {
             type: "p",
-            text: `Ce guide couvre l'installation de ${modName} de A à Z. Adapte les commandes et chemins ci-dessous à ta configuration réelle.`,
+            text: `This guide covers installing ${modName} from start to finish. Adjust the steps below to match your actual setup.`,
           },
           {
             type: "note",
             tone: "info",
-            text: "Fais toujours une sauvegarde de tes fichiers avant d'installer un mod.",
+            text: "Always back up your files before installing a mod.",
           },
-          { type: "h2", text: "Prérequis" },
+          { type: "h2", text: "Prerequisites" },
           {
             type: "ul",
             items: [
-              "Genshin Impact installé ou pas (pas besoin de le lancer pour installer le mod ni de le désinstaller)",
-              "Télécharger l'apk Kuro depuis le dépôt GitHub",
+              "Genshin Impact installed or not (no need to launch it to install or uninstall the mod)",
+              "Download the Kuro APK from the GitHub repository",
             ],
           },
-          { type: "h2", text: "Étapes d'installation" },
+          { type: "h2", text: "Installation steps" },
           {
             type: "ol",
             items: [
-              "Télécharge la dernière version depuis la page Releases du dépôt GitHub.",
-              "Ouvre l'application ZArchives et aller dans le répertoir contenant l'apk téléchargé.",
-              "Appuyer dessus et choisir l'option Installer.",
-              "Lance le jeu et vérifie que le mod est actif et fonctionnel.",
+              "Download the latest version from the GitHub repository's Releases page.",
+              "Open the ZArchiver app and go to the folder containing the downloaded APK.",
+              "Tap it and choose the Install option.",
+              "Launch the game and check that the mod is active and working.",
             ],
           },
           {
             type: "ul",
             items: [
-              "L'application ne montre aucune erreur au démarrage",
-              "Le logo du mod est visible en jeu et ouvre le menu du mod",
-              "La version affichée correspond au fichier téléchargé",
+              "The app shows no errors on startup",
+              "The mod's logo is visible in-game and opens the mod's menu",
+              "The displayed version matches the downloaded file",
             ],
           },
         ],
       },
       {
         slug: "desinstallation",
-        title: "Désinstallation",
-        tagline: "Retirer proprement le mod si besoin.",
+        title: "Uninstallation",
+        tagline: "Cleanly remove the mod if needed.",
         blocks: [
           {
             type: "p",
-            text: "Si tu veux revenir en arrière.",
+            text: "If you want to roll back.",
           },
           {
             type: "ol",
             items: [
-              "Désinstalle Kuro (pas besoin de toucher à la version officielle).",
+              "Uninstall Kuro (no need to touch the official version).",
             ],
           },
         ],
@@ -88,66 +88,107 @@ export const wiki: NavSection[] = [
     ],
   },
   {
-    label: "Utilisation",
+    label: "Usage",
     pages: [
       {
         slug: "guide",
-        title: "Guide d'utilisation",
-        tagline: "Comment tirer parti du mod une fois installé.",
+        title: "User Guide",
+        tagline: "Answers to the questions we get asked most often.",
         blocks: [
           {
             type: "p",
-            text: `Ce guide explique comment utiliser ${modName} au quotidien : activation, options disponibles et bonnes pratiques.`,
+            text: "Here are some answers to your common questions.",
           },
-          { type: "h2", text: "Activer / désactiver le mod" },
+          { type: "h3", text: "Is this mod safe? Will I get banned?" },
           {
             type: "p",
-            text: "Décris ici le raccourci clavier, le menu du loader, ou la commande utilisée pour activer et désactiver le mod sans le désinstaller.",
+            text: "No, you won't get banned. Just don't overuse the features marked as dangerous, or the system may detect it and you may get a temporary ban.",
           },
-          { type: "h2", text: "Options et configuration" },
           {
-            type: "kv",
-            rows: [
-              ["Paramètre", "Effet"],
-              ["ex_option_1", "décris ce que fait cette option"],
-              ["ex_option_2", "décris ce que fait cette option"],
-            ],
+            type: "note",
+            tone: "warn",
+            text: "Don't use the mod in co-op mode, as you may get reported — but you can use it with trusted people who won't report you.",
           },
-          { type: "h2", text: "Bonnes pratiques" },
           {
-            type: "ul",
-            items: [
-              "Vérifie une mise à jour du mod après chaque mise à jour majeure de Genshin Impact.",
-              "Garde une copie de ta configuration avant de mettre à jour.",
-              "Signale un bug via les Issues GitHub plutôt que par message privé.",
-            ],
+            type: "h3",
+            text: "Do I need to delete my original Genshin Impact?",
+          },
+          {
+            type: "p",
+            text: "No. There's no need to delete your original Genshin Impact, as you can run both of them.",
+          },
+          {
+            type: "h3",
+            text: "Can I use this mod in endgame content (Spiral Abyss, Stygian Onslaught, Imaginarium Theater)?",
+          },
+          {
+            type: "p",
+            text: "Yes, you can use this mod in that content and it will work.",
           },
           {
             type: "note",
             tone: "tip",
-            text: "Ajoute ici des captures d'écran ou GIFs du mod en action — glisse-les dans /public et référence-les dans une future section « Aperçu ».",
+            text: "Hide your Stygian clear-time records from friends so you don't attract their attention. If you're afraid of getting flagged for clearing too fast, enable dumb enemies and spend some extra time before clearing — this way you can avoid the fear of getting flagged.",
+          },
+          {
+            type: "h3",
+            text: "Can I skip downloading resources for the hax version?",
+          },
+          {
+            type: "p",
+            text: "Yes, you can choose not to download the resources and simply clone them instead — check the pinned messages in the download channel on the Discord server.",
+          },
+          {
+            type: "note",
+            tone: "info",
+            text: "Some devices can't clone the files due to restrictions. If that's your case, you'll have to download the resources instead, as there's no other alternative right now.",
+          },
+          { type: "h3", text: "The APK download website isn't loading" },
+          {
+            type: "p",
+            text: "If the website isn't loading, try using a VPN and keep it running until the APK file finishes downloading.",
+          },
+          { type: "h3", text: "Will I get hacked?" },
+          {
+            type: "p",
+            text: "No, you won't get hacked. Kuro is safe and free to use.",
+          },
+          { type: "h3", text: "What does auto dialogue do?" },
+          {
+            type: "p",
+            text: "It goes through dialogue faster without you tapping the screen, and it automatically picks the first option. Check the pinned messages for how to enable it.",
+          },
+          { type: "h2", text: "Still stuck?" },
+          {
+            type: "p",
+            text: "For other issues — login, cloning, auto dialogue, or download problems — check the pinned messages in this channel on the Discord server, posted by other helpers. Found a bug? Report it in the bug-report channel there.",
+          },
+          {
+            type: "note",
+            tone: "tip",
+            text: "Wish you all enjoy Kuro!",
           },
         ],
       },
       {
         slug: "faq",
-        title: "FAQ & dépannage",
-        tagline: "Problèmes courants et leurs solutions.",
+        title: "FAQ & Troubleshooting",
+        tagline: "Common problems and how to solve them.",
         blocks: [
-          { type: "h3", text: "Le mod ne se charge pas" },
+          { type: "h3", text: "The mod doesn't load" },
           {
             type: "p",
-            text: "Vérifie que le loader est lancé avant le jeu, et que la version du mod correspond à la version du jeu installée.",
+            text: "Make sure the loader is running before the game, and that the mod version matches your installed game version.",
           },
-          { type: "h3", text: "Le jeu crash au démarrage" },
+          { type: "h3", text: "The game crashes on startup" },
           {
             type: "p",
-            text: "Désactive les autres mods un par un pour identifier un conflit, puis consulte les Issues GitHub pour un problème similaire.",
+            text: "Disable other mods one at a time to identify a conflict, then check the GitHub Issues for a similar report.",
           },
-          { type: "h3", text: "Où signaler un bug ?" },
+          { type: "h3", text: "Where do I report a bug?" },
           {
             type: "p",
-            text: "Ouvre une Issue sur le dépôt GitHub du projet avec ta configuration, les logs du loader et les étapes de reproduction.",
+            text: "Open an Issue on the project's GitHub repository with your setup, loader logs, and steps to reproduce.",
           },
         ],
       },

@@ -15,7 +15,7 @@ export default function Sidebar() {
           <p className="font-display text-lg text-parchment">
             Kuro by firael
           </p>
-          <p className="text-xs text-muted">Wiki communautaire</p>
+          <p className="text-xs text-muted">Community wiki</p>
         </Link>
       </div>
 
@@ -62,7 +62,7 @@ export default function Sidebar() {
           href="https://github.com/"
           className="text-xs text-muted hover:text-teal"
         >
-          Code source sur GitHub →
+          Source code on GitHub →
         </a>
       </div>
     </aside>

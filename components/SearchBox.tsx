@@ -39,7 +39,7 @@ export default function SearchBox() {
             setQuery("");
           }
         }}
-        placeholder="Rechercher une page…"
+        placeholder="Search a page…"
         className="w-full rounded-sm border border-line bg-panel px-3 py-2 text-sm text-parchment placeholder:text-muted/70 outline-none focus:border-teal"
       />
       {focused && results.length > 0 && (

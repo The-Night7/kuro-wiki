@@ -9,8 +9,8 @@ function Note({
 }) {
   const styles = {
     info: { border: "border-teal", label: "Note", color: "text-teal" },
-    warn: { border: "border-ember", label: "Attention", color: "text-ember" },
-    tip: { border: "border-gold", label: "Astuce", color: "text-goldbright" },
+    warn: { border: "border-ember", label: "Warning", color: "text-ember" },
+    tip: { border: "border-gold", label: "Tip", color: "text-goldbright" },
   }[tone];
 
   return (

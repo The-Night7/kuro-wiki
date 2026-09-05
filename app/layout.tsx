@@ -18,8 +18,8 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "[Nom du mod] — Wiki",
-  description: "Documentation communautaire du mod pour Genshin Impact.",
+  title: "Kuro — Wiki",
+  description: "Community documentation for the Genshin Impact mod.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <body
         className={`${display.variable} ${body.variable} ${mono.variable} font-body`}
       >

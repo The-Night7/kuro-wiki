@@ -7,26 +7,26 @@ export default function HomePage() {
       <div className="bracket-frame mb-14 max-w-2xl">
         <span className="bf-tr" />
         <span className="bf-bl" />
-        <p className="mb-3 text-sm text-teal">Wiki communautaire · non-officiel</p>
+        <p className="mb-3 text-sm text-teal">Community wiki · unofficial</p>
         <h1 className="font-display text-4xl leading-tight text-parchment md:text-5xl">
           Kuro by firael
         </h1>
         <p className="mt-4 max-w-md text-muted">
-          Tout ce qu'il faut pour installer, configurer et dépanner le mod —
-          écrit pour être lu vite et suivi sans se perdre.
+          Everything you need to install, configure, and troubleshoot the mod —
+          written to be read fast and followed without getting lost.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <Link
             href="/installation"
             className="border border-gold px-4 py-2 text-sm text-goldbright transition-colors hover:bg-gold/10"
           >
-            Commencer l'installation
+            Start the installation
           </Link>
           <Link
             href="/guide"
             className="border border-line px-4 py-2 text-sm text-parchment/80 transition-colors hover:border-teal hover:text-teal"
           >
-            Guide d'utilisation
+            User Guide
           </Link>
         </div>
       </div>
